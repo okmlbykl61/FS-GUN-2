@@ -10,15 +10,22 @@
 
     <form action="result.html" method="get">
       <div>
-        <input type="text" id="name" name="Kullanıcı Adı" />
-        <p>isim:</p>
-        <input type="text" />
-
+        <label for="name">isim</label> 
+        <input type="text" id="name" name="Kullanıcı Adı" placeholder="Lütfen İsminizi Giriniz" required/>
+        <br />
         <label for="Lastname">Soyad</label>
-        <input type="text" id="Lastname" name="Kullanıcı soyadı" />
-        <label for="isim">isim:</label>
+        <input type="text" id="Lastname" name="Kullanıcı Soyadı" placeholder="Lütfen Soyimnizi Giriniz" />
+  <div>
+    <label for="password">Şifre</label>
+    <input type="password" name="Şifre" id="password" placeholder="Lütfen Şifrenizi Giriniz"> 
+  </div>
+        
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="Email" id="email" placeholder="Lütfen Mail Adresinizi Giriniz"/>
       </div>
-      <br /><br /><br />
+      <br>
       <input type="submit" value="Gönder" id="" />
     </form>
   </body>
