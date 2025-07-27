@@ -11,7 +11,7 @@
     <form action="result.html" method="get">
       <div>
         <label for="name">isim</label> 
-        <input type="text" id="name" name="Kullanıcı Adı" placeholder="Lütfen İsminizi Giriniz" required/>
+        <input type="text" id="name" name="Kullanıcı Adı" placeholder="Lütfen İsminizi Giriniz" />
         <br />
         <label for="Lastname">Soyad</label>
         <input type="text" id="Lastname" name="Kullanıcı Soyadı" placeholder="Lütfen Soyimnizi Giriniz" />
@@ -29,7 +29,7 @@
 
       <!-- radio -->
 
-      
+
       <div>
 
         <p>cinsiyet</p>
@@ -59,7 +59,46 @@
       <label for="Kuş">Kuş</label>
 
 
-      <br>
+      <!-- number -->
+
+
+      <div>
+        <label for="age">age</label>
+        <input type="number" name="Kullanıcı Yaşı" id="age" min="18" max="45">
+      </div>
+
+      <!-- </search> -->
+       <div>
+        <label for="Aranacak Kelime">Aranacak Kelime</label>
+        <input type="search" name="Arancak Kelime" id="ara">
+       </div>
+
+       <!-- color -->
+
+       <div>
+        <label for="color">renk seçin</label>
+        <input type="color" id="color" name="seçilen renk">
+       </div>
+
+       <!-- date -->
+
+       <label for="date">tarih seçiniz</label>
+       <input type="date" name="tarih" id="date" min="01-01-1923" max="31.12.2025">
+
+       <!-- file -->
+
+       <div>
+          <label for="dosya">dosya seç</label>
+          <input type="file" name="seçilen dosya" id="dosya">
+       </div>
+
+       <!-- telefon -->
+
+       <div><label for="tel">telefon</label></div>
+       <input type="tel" name="telefon numarası" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx-xxx-xx-xx" value="0">
+       
+       <br>
+
       <input type="submit" value="Gönder" id="" />
     </form>
   </body>
