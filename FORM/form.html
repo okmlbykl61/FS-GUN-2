@@ -133,8 +133,46 @@
       </select>
        </div>
        <hr>
-       <br>
+       <!-- textarea -->
+       <div>
+        <label for="yorum">yorum</label><br>
+        <textarea name="girilen_yorum" id="yorum" style="width: 50%; height: 150px; resize: none;"></textarea>
+       
+      </div>
+       
+      <!-- data list -->
 
+      <div>
+        <label for="input_browser"> browser</label>
+        <input type="text" name="kullanılan_browser" id="input_browser" list="browser">
+
+          <datalist id="browser">
+            <option value="Chrome">Chrome</option>
+            <option value="Fire Fox">Fire Fox</option>
+            <option value="Safari">Safari</option>
+            <option value="Opera">Opera</option>
+            <option value="Brave">Brave</option>
+          </datalist>
+
+      </div>
+       
+      <!-- field set -->
+       <div>
+          <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <label for="">Ad</label>
+            <br>
+            <input type="text" name="name"  placeholder="Adınız">
+            <br>
+            <label for="">Soyad</label>
+            <br>
+            <input type="text" name="surname"  placeholder="soyadınız">
+          </fieldset>
+
+       </div>
+       
+       <br>
+       <input type="reset" value="Reset">
       <input type="submit" value="Gönder" id="" />
     </form>
   </body>
